@@ -1,0 +1,57 @@
+.form-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10rem auto;
+  width: $form-width;
+  height: 100%;
+
+  .form-section-fill {
+    .product-list {
+      &-item {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .form-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .valid {
+      display: none;
+    }
+  }
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: $success-width;
+  height: 100%;
+  margin: 15rem auto;
+}
+
+@media (max-width: 425px) {
+  .form-section {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0rem auto;
+  }
+  .success-message {
+    flex-direction: column;
+    align-items: flex-start;
+    width: $success-width;
+    height: 100%;
+    width: 100%;
+    margin: 0rem auto;
+  }
+}
