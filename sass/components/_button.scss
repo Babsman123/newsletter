@@ -35,3 +35,15 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .submit {
+    height: 8vh;
+  }
+  .success-message {
+    .dismiss {
+      margin-top: 22rem;
+      height: 8vh;
+    }
+  }
+}

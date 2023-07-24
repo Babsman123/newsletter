@@ -96,6 +96,13 @@ body {
       transform: scaleX(1.4) scaleY(1.7);
       opacity: 0; }
 
+@media (max-width: 425px) {
+  .submit {
+    height: 8vh; }
+  .success-message .dismiss {
+    margin-top: 22rem;
+    height: 8vh; } }
+
 .form-section {
   display: flex;
   flex-direction: row-reverse;
@@ -115,13 +122,15 @@ body {
       display: none; }
 
 .success-message {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid white;
+  justify-content: space-between;
   width: 320px;
   height: 100%;
   margin: 15rem auto; }
+  .success-message .img {
+    width: 100%; }
 
 @media (max-width: 425px) {
   .form-section {
@@ -134,8 +143,9 @@ body {
   .success-message {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     width: 320px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0rem auto; } }
 
@@ -167,8 +177,7 @@ body {
   border-radius: 1rem;
   padding: 2rem 2.5rem; }
   .success-message img {
-    width: 15%;
-    height: 100%; }
+    width: 15%; }
 
 @media (max-width: 425px) {
   .form-section {
@@ -191,6 +200,5 @@ body {
       width: 100%;
       height: 60%; }
   .success-message {
-    height: 100vh;
-    border: 2px solid green;
-    padding: 2rem 2rem; } }
+    padding: 2rem 2rem;
+    border-radius: 0rem; } }
