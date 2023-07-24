@@ -7,7 +7,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #242742; }
+  background-color: #242742;
+  font-family: "Red Hat Display", sans-serif; }
 
 .form-section-fill h1 {
   color: #242742;
